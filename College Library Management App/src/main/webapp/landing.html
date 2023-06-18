@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Library Home Page</title>
+
+<style>
+/* Global styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: lightblue;
+}
+
+/* Header styles */
+header {
+	background-color: #212121;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	height: 100px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #fbc02d;
+}
+
+/* Hero section styles */
+.hero {
+	background-image: url('hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+
+.hero-content {
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.hero-content h2 {
+	font-size: 48px;
+	margin: 0;
+}
+
+.hero-content p {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #fbc02d;
+	color: #212121;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #e0a800;
+}
+
+/* Featured books section styles */
+.featured-books {
+	padding: 50px;
+	text-align: center;
+}
+
+.featured-books h2 {
+	font-size: 36px;
+	margin: 0 0 50px 0;
+}
+
+.books-container {
+	display: flex;
+	justify-content: center;
+}
+
+.book {
+	margin: 0 20px;
+}
+
+.book img {
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.book h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.book p {
+	font-size: 18px;
+	margin: 0;
+	color: #757575;
+}
+
+/* About section styles */
+.about {
+	background-color: #f2f2f2;
+	padding: 50px;
+	text-align: center;
+}
+
+.about h2 {
+	font-size: 36px;
+	margin: 0 0 50px 0;
+}
+
+.about p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+/* Footer styles */
+footer {
+	background-color: #212121;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+	<form action="./Controller/homepage">
+		<header>
+			<h1>E- College Library</h1>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="chooserole.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<div class="hero-content">
+				<h2>Welcome to E-Library</h2>
+				<p>Access thousands of books, articles, and journals from the
+					comfort of your home.</p>
+				<a href="registration.html" class="btn">Get started</a>
+			</div>
+		</section>
+
+		<section class="featured-books">
+			<h2>Featured Books</h2>
+			<div class="books-container">
+				<div class="book">
+					<img src="DSA with Java.png" alt="Book 1">
+					<h3>Book 1 Title</h3>
+					<p>Author name</p>
+				</div>
+				<div class="book">
+					<img src="Rich Dad.png" alt="Book 2">
+					<h3>Book 2 Title</h3>
+					<p>Author name</p>
+				</div>
+				<div class="book">
+					<img src="Java Book.png" alt="Book 3">
+					<h3>Book 3 Title</h3>
+					<p>Author name</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<h2>About E-Library</h2>
+			<p>E-Library is an online platform that allows users to access
+				thousands of books, articles, and journals from the comfort of their
+				homes. We believe in providing easy access to information and
+				knowledge to everyone, regardless of their location.</p>
+			<a href="#" class="btn">Learn more</a>
+		</section>
+
+		<footer>
+			<p>&copy; 2023 E-Library. All rights reserved.</p>
+		</footer>
+	</form>
+</body>
+</html>

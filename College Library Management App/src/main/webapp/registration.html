@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+
+<style>
+header {
+	margin: 0px;
+	padding: 15px;
+	height: 100px;
+}
+
+.libreg {
+	color: darkgreen;
+	height: 500px;
+	background-color: cyan;
+	margin-left: 400px;
+	border: 2px solid gray;
+	border-radius: 12px;
+	margin-right: 300px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+input{
+	border-radius: 12px;
+}
+
+button {
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	background-color:yellow;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+body {
+	background-image: url('Library Picture.jpg');
+}
+</style>
+</head>
+<body bgcolor=aqua text-align=center>
+	<header
+		style="height: 70px; background-color: purple; border-bottom: 1px solid white;">
+		<h1 style="color: white; text-align: center;">College E-Library Management App</h1>
+		</header>
+	<div class="libreg">
+
+		<h1 style="color: black; text-align: center;">Registration Form</h1>
+		<br /> <br />
+		<form method="post" action="./controller/register">
+			<table cellpadding="10px" align="center">
+
+				<tr>
+					<th>Full Name :</th>
+					<td><input type="text" name="name" /></td>
+				</tr>
+				<tr>
+					<th>Email-id :</th>
+					<td><input type="email" name="emailid" /></td>
+				</tr>
+				<tr>
+					<th>Contact No. :</th>
+					<td><input type="text" name="contact" /></td>
+				</tr>
+				<tr>
+					<th>Password :</th>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="Submit" /></td>
+				</tr>
+				<tr>
+					<th colspan="2" align="center">
+						<button>
+							<a href="./chooserole.html"> Login </a>
+						</button>
+					</th>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>
